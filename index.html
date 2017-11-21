@@ -1,8 +1,21 @@
+<!DOCTYPE html>
 <html>
-<div id="content">
-    <div class="row">
-      <div class="image"><img src="http://i.imgur.com/eKSLbfUh.jpg">
-      </div>
-    </div>
-</div>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="anim.js"></script>
+    <title>N-Body in HTML/Javascript</title>
+</head>
+<h2>N-Body in HTML/Javascript</h2>
+<body>
+
+<canvas id="myCanvas" width="1000" height="500"></canvas>
+
+
+<script> 
+    canvasElement = document.getElementById("myCanvas");
+    c = canvasElement.getContext("2d");
+    go(canvasElement,c);
+</script>
+
+</body>
 </html>
