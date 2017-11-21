@@ -63,14 +63,12 @@ for (var i = 400; i< 600; i+=20) {
 }
 
 //everything has been initialized
-function run(canvas_elem, context) {
-    context.clearRect(0, 0, canvas_elem.width, canvas_elem.height);
-    draw(context);
-    update_position(context);
-    
-}
-function go(canvas_elem, contet){
-    setInterval(function() {run(canvas_elem, contet);}, 40);
+function go(canvas_elem, context){
+    setInterval(function() {
+        context.clearRect(0, 0, canvas_elem.width, canvas_elem.height);
+        draw(context);
+        update_position(context);
+    }, 40);
 }
 
 
